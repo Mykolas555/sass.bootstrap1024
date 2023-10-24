@@ -1,0 +1,47 @@
+
+
+header{
+    background-color: $primary_color;
+    height:10rem;
+}
+
+.collapse{
+    justify-content: end;
+    .collapse{
+        .navbar-nav{
+            .nav{
+                padding-right: 3rem;
+            }
+        }
+    }
+}
+
+#contact_us{
+    border-radius: 10px;
+    background: #C24914;
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration: none;
+}
+
+.navbar{
+    padding: 3rem;
+    &__logo{
+        color: #000;
+        font-family: Jim Nightshade;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-decoration: none;
+    }
+    ul{
+        li{
+            @include nav_menu_list;
+        }
+    }
+}
