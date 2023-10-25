@@ -1,0 +1,30 @@
+.community{
+    
+    &__title{
+        @include h;
+    }
+    &__text{
+        @include p;
+    }
+    &__submit{
+        border-radius: 10px;
+        background: #FC8621;
+        flex-shrink: 0;
+        color: #FFF;
+        text-align: center;
+        font-family: Poppins;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-decoration: none;
+    }
+    &__image{
+        position: relative;
+        right: 400px;
+    }
+}
+
+.content_left{
+    z-index: 3;
+}

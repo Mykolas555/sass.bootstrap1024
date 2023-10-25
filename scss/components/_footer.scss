@@ -1,0 +1,31 @@
+footer{
+    background:$primary_color;
+    padding: 0 10% 0 10%;
+    .footer{
+        .row{
+            padding:10%;
+            .footer__logo{
+                
+                a{
+                color: #000;
+                font-family: Jim Nightshade;
+                font-size: 40px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                text-decoration: none
+                }
+            }
+            .footer__contacts{
+                p{
+                    text-align: left;
+                }
+            }
+        }
+    }
+}
+
+
+footer p{
+    text-align: center;
+}

@@ -1,96 +1,145 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
+<html lang="en">
+  <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Jim+Nightshade&family=Poppins&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jim+Nightshade&family=Poppins&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="/css/style.css">
         <title>SASS BOOTSTRAP</title>
-    </head>
-    <body>
-        <header>
-            <nav class="navbar navbar-expand-lg">
-                <div class="container-fluid">
-                  <a class="navbar__logo" href="#"><img src="/images/logo.svg" alt="">Educare</a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav">
-                      <li class="nav">
-                        <a class="nav" href="#">Home</a>
-                      </li>
-                      <li class="nav">
-                        <a class="nav" href="#">About</a>
-                      </li>
-                      <li class="nav dropdown">
-                        <a class="nav-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Courses
-                        </a>
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="#">Action</a></li>
-                          <li><a class="dropdown-item" href="#">Another action</a></li>
-                          <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                      </li>
-                      <li class="nav dropdown">
-                        <a class="nav-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Blog
-                        </a>
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="#">Action</a></li>
-                          <li><a class="dropdown-item" href="#">Another action</a></li>
-                          <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                      </li>
-                      <li class="nav" id="contact_us">
-                        <a class="nav" href="#">Contact Us</a>
-                      </li>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar__logo" href="#"><img src="/images/logo.svg" alt="">Educare</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse mr-5" id="navbarNavDropdown">
+              <ul class="navbar-nav gap-5">
+                <li><a href="#">Home</a></li>
+                <li><a class="" href="#">About</a></li>
+                <li class="dropdown">
+                  <a class="nav-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Courses</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
                     </ul>
+                      <li class="dropdown">
+                        <a class="nav-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Blog</a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                          <a id="contact_us" class="nav" href="#">Contact Us</a>
+                        </ul>
+                    </ul>
+                    <a id="contact_us" class="ml-5" href="#">Contact Us</a>
                   </div>
                 </div>
               </nav>
-        </header>
-        <main>
-            <div class="container-fluid">
-                <div class="learning">
-                    <div class="row">
-                        <div class="learning__content col-md-12 col-lg-6">
-                            <h2 class="learning__title">Start learning with us now</h2>
-                            <p class="learning__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa laboriosam  voluptates sed beatae?</p>
-                            <a class="learning__link" href="#">Start learning</a>
-                        </div>
-                        <div class="learning__image col-md-12 col-lg-6">
-                            <img class="img-fluid" src="/images/5437683.svg" alt="">
-                        </div>
-                    </div>
-                </div>
+    </header>
+    <main>
+      <div class="container-fluid">
+        <div class="learning">
+          <div class="row justify-content-between">
+            <div class="learning__content col-md-12 col-lg-5">
+              <h2 class="learning__title">Start learning with us now</h2>
+              <p class="learning__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa laboriosam  voluptates sed beatae?</p>
+              <a class="learning__link" href="#">Start learning</a>
             </div>
-        </main>
-        <section class="banner">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="banner__image col-md-12 col-lg-6">
-                        <img class="img-fluid" src="/images/image 3.svg" alt="">
-                    </div>
-                    <div class="banner col-md-12 col-lg-6">
-                        <h2 class="banner__title">Welcome to the online centers</h2>
-                        <ul class="banner__list list">
-                            <li class="list__element">Start learning from your experience</li>
-                            <li class="list__element">Enhance your skills with us now</li>
-                            <li class="list__element">Do your favorite course</li>
-                        </ul>
-                    </div>
-                    <div class="banner col-md-12 col-lg-6">
-                        <h2 class="banner_title">Start learning by creating free account and get register</h2>
-                    </div>
-                    <div class="banner__image col-md-12 col-lg-6">
-                        <img class="img-fluid" src="/images/image 1.svg" alt="">
-                    </div>
-                </div>
+          <div class="learning__image col-md-12 col-lg-5">
+            <img class="img-fluid" src="/images/5437683.svg" alt="">
+          </div>
+        </div>
+      </div>
+    </main>
+    <section class="blog">
+      <div class="container-fluid">
+        <div class="row gap-5 justify-content-between">
+          <div class="blog__image col-md-12 col-lg-5">
+            <img class="img-fluid" src="/images/image 3.svg" alt="">
+          </div>
+          <div class="banner col-md-12 col-lg-5">
+            <h2 class="blog__title">Welcome to the online centers</h2>
+            <ul class="blog__list list">
+              <li class="list__element">Start learning from your experience</li>
+              <li class="list__element">Enhance your skills with us now</li>
+              <li class="list__element">Do your favorite course</li>
+            </ul>
+          </div>
+          <div class="blog col-md-12 col-lg-5">
+            <h2 class="blog__title">Start learning by creating free account and get register</h2>
+          </div>
+          <div class="blog__image col-md-12 col-lg-5">
+            <img class="img-fluid" src="/images/image 1.svg" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="container-fluid ">
+      <section class="inputs">
+        <div class="row d-flex justify-content-between ">
+          <input class="inputs__name col-md-12 col-lg-3" type="text" placeholder="Your name">
+          <input class="inputs__name col-md-12 col-lg-3" type="text" placeholder="Your email address">
+          <button class="inputs__button col-md-12 col-lg-3">Subscribe</button>
+        </div>
+      </section>
+    </div>
+    <div class="container-fluid">
+      <section class="community">
+        <div class="row">
+          <div class="content_left col-md-12 col-lg-5">
+            <h2 class="community__title">Start growing with our community</h2>
+            <p class="community__text">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+            <a class="community__submit" href="#">Join community</a>
+          </div>
+          <div class="content_right col-md-12 col-lg-7">
+            <img class="community__image" src="/images/image 222222222.svg" alt="">
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <div class="container-fluid">
+        <div class="footer">
+          <div class="row">
+            <div class="footer__logo col-md-12 col-lg-3">
+              <img src="/images/logo.svg" alt="">
+              <a href="#">Educare</a>
             </div>
-        </section>
-    </body>
+            <div class="footer__media media col-md-12 col-lg-3">
+              <h6>Follow us</h6>
+              <div class="media__links">
+                <img src="/images/et_twitter.svg" alt="">
+                <img src="/images/et_linkedin.svg" alt="">
+                <img src="/images/circum_facebook.svg" alt="">
+                <img src="/images/bxl_instagram.svg" alt="">
+              </div>
+            </div>
+            <div class="footer__links col-md-12 col-lg-3">
+              <h6>Useful links</h6>
+              <ul>
+                <li>Our Projects</li>
+                <li>FAQ's</li>
+                <li>News and Updates</li>
+              </ul>
+            </div>
+            <div class="footer__contacts col-md-12 col-lg-3">
+              <h6>Contacts</h6>
+              <p>Address : 4-5 Main road , Delhi</p>
+              <p>Email : educare@gmail.com</p>
+              <p>Phone Number : +91 4533433265</p>
+            </div>
+          </div>
+        </div>
+        <p><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+          <path d="M8.08 8.53282C8.13 8.215 8.24 7.93571 8.38 7.70458C8.68 7.16526 9.19 6.88597 9.88 6.87633C10.33 6.87633 10.74 7.06895 11.03 7.34824C11.31 7.64679 11.5 8.06091 11.5 8.47503H13.3C13.28 8.02239 13.19 7.60827 13 7.22304C12.85 6.85707 12.62 6.52963 12.32 6.25997C10.87 4.96945 8.18 5.15244 6.95 6.6163C5.66 8.22464 5.63 11.0368 6.94 12.6451C8.15 14.0801 10.8 14.2824 12.24 13.0015C12.55 12.7607 12.8 12.4622 13 12.1154C13.16 11.7687 13.27 11.4028 13.28 11.0079H11.5C11.5 11.2102 11.43 11.3931 11.34 11.5569C11.25 11.7398 11.13 11.8843 11 12.0095C10.67 12.2599 10.28 12.3947 9.86 12.3947C9.5 12.3851 9.2 12.3177 8.97 12.1732C8.71076 12.0328 8.50425 11.8171 8.38 11.5569C7.88 10.6901 7.96 9.48626 8.08 8.53282ZM10 0C4.5 0 0 4.33382 0 9.63072C0.53 22.4107 19.5 22.4011 20 9.63072C20 4.33382 15.5 0 10 0ZM10 17.3353C5.59 17.3353 2 13.8779 2 9.63072C2.44 -0.587474 17.56 -0.587474 18 9.63072C18 13.8779 14.41 17.3353 10 17.3353Z" fill="#7D7A74"/>
+          </svg>All Copyrights reserved</p>
+      </div>
+    </footer>
+  </body>
 </html>

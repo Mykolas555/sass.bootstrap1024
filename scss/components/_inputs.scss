@@ -1,0 +1,31 @@
+.inputs{
+    background-color: $primary_color;
+    margin: 5%;
+    padding: 5%;
+            &__name{
+                width: 300px;
+                height: 63px;
+                flex-shrink: 0;
+                color: rgba(0, 0, 0, 0.50);
+                font-family: Poppins;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                border: none;
+                text-align: center;
+            }
+            &__button{
+                width: 300px;
+                height: 63px;
+                flex-shrink: 0;
+                color: #FFF;
+                font-family: Poppins;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                background: #C24914;
+                border: none;
+            }
+}
